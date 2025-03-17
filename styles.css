@@ -23,3 +23,15 @@ main{
 footer{
   background-color: #d9043d;
 }
+
+@media screen and (min-width: 1000px) {
+  
+}
+
+@media screen and (max-width: 999px) {
+  
+}
+
+@media screen and (max-width: 768px){
+
+}
