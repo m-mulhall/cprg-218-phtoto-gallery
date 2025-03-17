@@ -5,22 +5,38 @@ body{
 }
 
 header{
+  display: grid;
   background-color: #120323;
   color: #97bf04;
 }
 
 nav{
+  display: grid;
   background-color: #d9043d;
 }
 
-main{
-  img{
-    border-bottom: 10px solid #97bf04;
+nav ul li{
+  list-style-type: none;
+  display: inline;
+  margin-right: 1.5rem;
+}
 
+nav ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+main{
+  display: grid;
+  img{
+    width: 100%;
+    height: auto;
+    border-bottom: 10px solid #97bf04;
   }
 }
 
 footer{
+  display: grid;
   background-color: #d9043d;
 }
 
@@ -33,5 +49,34 @@ footer{
 }
 
 @media screen and (max-width: 768px){
+
+  header{
+    padding-bottom: 0.5rem;
+  }
+
+  nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 95%;
+    margin: 0 auto;
+    justify-items: center;
+  }
+
+  nav ul li{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: 1px solid #97bf04;
+  }
+
+  main{
+    grid-template-columns: 1fr;
+    img{
+      width: 100%;
+      max-width: 640px;
+      margin: 0 auto;
+      display: grid;
+    }
+  }
+
 
 }
