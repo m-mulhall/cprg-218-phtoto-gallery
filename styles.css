@@ -60,7 +60,8 @@ footer{
 
 @media screen and (max-width: 767px){
   header{
-    padding-bottom: 0.5rem;
+    text-align: center;
+    padding-top: 0.5rem;
   }
 
   nav{
@@ -80,10 +81,14 @@ footer{
   main{
     grid-template-columns: 1fr;
     img{
-      width: 100%;
-      max-width: 640px;
-      margin: 0 auto;
       display: grid;
+      width: 100%;
+      max-width: 360px;
+      margin: 0 auto;
     }
   }
+}
+
+@media screen and (min-width: 1000px) {
+  
 }
