@@ -38,12 +38,24 @@ footer{
   background-color: #d9043d;
 }
 
-@media screen and (min-width: 1000px) {
-  
-}
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  header{
+    text-align: center;
+    padding-top: 0.5rem;
+  }
 
-@media screen and (max-width: 999px) {
-  
+  nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin: auto;
+    background-color: pink;
+  }
+
+  nav ul li{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+  }
 }
 
 @media screen and (max-width: 767px){
