@@ -11,13 +11,11 @@ header{
 }
 
 nav{
-  background-color: #d9043d;
+  text-align: center;
 }
 
 nav ul li{
   list-style-type: none;
-  display: inline;
-  margin-right: 1.5rem;
 }
 
 nav ul li a{
@@ -29,12 +27,22 @@ main{
   img{
     width: 100%;
     height: auto;
+    background-color: #fff;
     border-bottom: 10px solid #97bf04;
   }
 }
 
+figure {
+  text-align: left;
+  padding: 2rem;
+  background-color: #fff;
+}
+
 footer{
   display: grid;
+  text-align: center;
+  padding: 35px;
+  color: #fff;
   background-color: #d9043d;
 }
 
