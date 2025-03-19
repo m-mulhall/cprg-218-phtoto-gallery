@@ -23,13 +23,17 @@ nav ul li a{
   text-decoration: none;
 }
 
-main{
+#gallery-container{
   img{
-    width: 100%;
-    height: auto;
-    background-color: #fff;
-    border-bottom: 10px solid #97bf04;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  border-bottom: 10px solid #97bf04;
   }
+}
+
+h2{
+  text-align: center;
 }
 
 figure {
