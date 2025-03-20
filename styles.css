@@ -1,129 +1,90 @@
-
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body{
   background-color: #cccccc;
   font-family: sans-serif;
 }
 
 header{
-  display: grid;
+  padding-top: 1rem;
   background-color: #120323;
+  justify-items: center;
+  align-items: center;
+}
+
+h1{
+  padding: 1rem;
   color: #97bf04;
 }
 
 nav{
   justify-items: center;
   text-align: center;
-}
-
-nav ul li{
-  list-style-type: none;
+  background-color: #d9043d;
+  width: 100%;
+  padding: 0.5rem;
 }
 
 nav ul li a{
-  color: white;
   text-decoration: none;
-}
-
-#gallery-container{
-  img{
-  width: 100%;
-  height: auto;
-  background-color: #fff;
-  border-bottom: 10px solid #97bf04;
-  }
+  list-style-type: none;
+  color: white;
 }
 
 h2{
   text-align: center;
 }
 
-figure {
-  text-align: left;
-  padding: 2rem;
-  background-color: #fff;
+figure{
+  border: 15px solid white;
+  background-color: white;
+}
+
+figure img{
+  max-width: 650px;
+  border-bottom: 10px solid #97bf04;
 }
 
 footer{
-  display: grid;
   text-align: center;
-  padding: 35px;
+  padding: 15px;
   color: #fff;
   background-color: #d9043d;
 }
 
-@media screen and (min-width: 768px) and (max-width: 999px) {
-  header{
-    text-align: center;
-    padding-top: 0.5rem;
-  }
-
-  nav{
-    display: flex;
-    width: 100%;
-    margin: auto;
-    background-color: hotpink;
-  }
+@media screen and (min-width:1000px){
 
   nav ul li{
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    text-align: center;
+    display: inline;
+    padding: 3rem;
   }
-
-  main{
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (max-width: 767px){
-  header{
-    width: 100%;
-    padding-top: 0.5rem;
-    text-align: center;
-  }
-
-  nav{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  nav ul{
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    gap: 1rem;
-  }
-
-  nav ul li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: 20px;
-    margin: 0.5rem;
-    padding: 16px;
-    border: 2px solid #97bf04;
-    background-color: #d9043d;
-  }
-
-  main{
-    grid-template-columns: 1fr;
-    img{
-      display: grid;
-      width: 100%;
-      max-width: 650px;
-      margin: 0 auto;
-    }
-  }
-}
-
-@media screen and (min-width: 1000px) {
   
+  h2{
+    padding-top: 1rem;
+  }
+
+  div#gallery-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem 3rem;
+    margin: 1rem;
+  }
+
+  h3{
+    padding: 1rem 0 1rem 0;
+  }
+
+  figure img{
+    width: 100%;
+    height: auto;
+  }
+
+  figure:last-of-type{
+    display: grid;
+    grid-column: span 2;
+    place-items: center;
+  }
 }
