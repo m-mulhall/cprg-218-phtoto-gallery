@@ -131,4 +131,49 @@ footer{
     grid-column: span 2;
     place-items: center;
   }
+@media screen and (max-width: 767px){
+
+  nav{
+    background-color: transparent;
+  }
+
+  nav ul{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    width: 95%;
+    height: auto;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  nav ul li{
+    padding: 15px;
+    background-color: #d9043d;
+    border: 2px solid #97bf04;
+  }
+
+  h2{
+    padding-top: 1rem;
+  }
+
+  div#gallery-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem 2.5rem;
+    gap: 1rem;
+  }
+
+  h3{
+    padding: 1rem 0 1rem 0;
+  }
+
+  figure img{
+    width: 100%;
+    height: auto;
+  }
+
+  figcaption{
+    font-size: medium;
+    font-weight: lighter;
+  }
 }
