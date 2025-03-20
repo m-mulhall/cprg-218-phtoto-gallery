@@ -39,7 +39,7 @@ h2{
 }
 
 figure{
-  border: 15px solid white;
+  border: 25px solid white;
   background-color: white;
 }
 
@@ -80,6 +80,50 @@ footer{
   figure img{
     width: 100%;
     height: auto;
+  }
+
+  figure:last-of-type{
+    display: grid;
+    grid-column: span 2;
+    place-items: center;
+  }
+}
+
+@media screen and (max-width: 999px){
+
+  nav ul li{
+    display: inline;
+    padding: 2rem;
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  h2{
+    padding-top: 2rem;
+  }
+
+  div#gallery-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 4rem;
+    margin: 2rem;
+  }
+
+  h3{
+    padding: 1rem 0 1rem 0;
+  }
+
+  figure img{
+    width: 100%;
+    height: auto;
+  }
+
+  figcaption{
+    font-size: small;
+    font-weight: lighter;
   }
 
   figure:last-of-type{
