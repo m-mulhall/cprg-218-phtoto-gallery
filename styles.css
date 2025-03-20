@@ -40,6 +40,7 @@ h2{
 
 figure{
   border: 25px solid white;
+  border: 30px solid white;
   background-color: white;
 }
 
@@ -51,6 +52,7 @@ figure img{
 footer{
   text-align: center;
   padding: 15px;
+  padding: 25px;
   color: #fff;
   background-color: #d9043d;
 }
